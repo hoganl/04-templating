@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Lab 4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="vendor/styles/normalizing.css">
     <link rel="stylesheet" href="vendor/styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -19,11 +19,11 @@
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
     <script id="blog-template" type="text/x-handlebars-template">
-      <article class="template" data-category="{{category}}">
+      <article class="template" data-category="{{category}}" data-author="{{author}}">
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
-            By <address><a href="{{authorUrl}}">{{author name}}</a></address>
+            By <address><a href="{{authorUrl}}">{{author}}</a></address>
             published <time pubdate datetime="{{publishedOn}}">Publish Time</time>
           </div>
         </header>
